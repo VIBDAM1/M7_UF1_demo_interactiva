@@ -36,5 +36,34 @@ namespace demoInteractiva
             //tambe es pot fer modificant la propietat visible:
             //this.Visible = false;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //obrir form2 MODAL
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to save changes?", "Save Changes",
+                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Changes saved successfully!", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (result == DialogResult.No)
+            {
+                MessageBox.Show("Changes discarded!", "Discarded",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                MessageBox.Show("Operation cancelled!", "Cancelled",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
