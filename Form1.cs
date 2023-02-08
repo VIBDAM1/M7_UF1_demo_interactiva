@@ -65,5 +65,16 @@ namespace demoInteractiva
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //obrir un altre formulari a la mateixa posició que el formulari actual
+            Form2 form2 = new Form2();
+//
+            form2.StartPosition = FormStartPosition.Manual;
+            form2.Location = new Point(this.Left+50, this.Top+25);
+//            
+            form2.Show();
+        }
     }
 }
