@@ -72,7 +72,7 @@ namespace demoInteractiva
             Form2 form2 = new Form2();
 //
             form2.StartPosition = FormStartPosition.Manual;
-            form2.Location = new Point(this.Left+50, this.Top+25);
+            form2.Location = new Point(this.Left+0, this.Top+0);
 //            
             form2.Show();
         }
