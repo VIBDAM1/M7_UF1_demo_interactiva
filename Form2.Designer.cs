@@ -28,19 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(103, 90);
+            label1.Name = "label1";
+            label1.Size = new Size(70, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Text d'ajuda";
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 237);
-            this.Name = "Form2";
-            this.Text = "Finestra d\'ajuda";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(305, 237);
+            Controls.Add(label1);
+            Name = "Form2";
+            Text = "Finestra d'ajuda";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }

@@ -42,6 +42,14 @@ namespace demoInteractiva
             //obrir form2 MODAL
             Form2 form2 = new Form2();
             form2.ShowDialog();
+
+            //
+
+
+            /*
+             MessageBox.Show("hola");
+             
+             */
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -70,11 +78,16 @@ namespace demoInteractiva
         {
             //obrir un altre formulari a la mateixa posició que el formulari actual
             Form2 form2 = new Form2();
-//
+            //
             form2.StartPosition = FormStartPosition.Manual;
-            form2.Location = new Point(this.Left+0, this.Top+0);
-//            
+            form2.Location = new Point(this.Left + 0, this.Top + 0);
+            //            
             form2.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hola");
         }
     }
 }

@@ -28,77 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(96, 187);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "login";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(96, 187);
+            button1.Name = "button1";
+            button1.Size = new Size(122, 50);
+            button1.TabIndex = 0;
+            button1.Text = "login";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(274, 179);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 51);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "ajuda";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(274, 179);
+            button2.Name = "button2";
+            button2.Size = new Size(114, 51);
+            button2.TabIndex = 1;
+            button2.Text = "ajuda";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(274, 254);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 51);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "ajuda (modal)";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Location = new Point(274, 254);
+            button3.Name = "button3";
+            button3.Size = new Size(114, 51);
+            button3.TabIndex = 2;
+            button3.Text = "ajuda (modal)";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(122, 343);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(157, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "exemple messagebox";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.Location = new Point(122, 343);
+            button4.Name = "button4";
+            button4.Size = new Size(157, 23);
+            button4.TabIndex = 3;
+            button4.Text = "exemple messagebox";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(274, 56);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 51);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "ajuda fixed location";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Location = new Point(100, 100);
+            button5.Name = "button5";
+            button5.Size = new Size(114, 51);
+            button5.TabIndex = 4;
+            button5.Text = "ajuda fixed location";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(534, 126);
+            button6.Name = "button6";
+            button6.Size = new Size(75, 23);
+            button6.TabIndex = 5;
+            button6.Text = "button6";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
@@ -108,5 +119,6 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Button button6;
     }
 }
