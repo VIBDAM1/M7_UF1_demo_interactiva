@@ -87,7 +87,8 @@ namespace demoInteractiva
 
         private void button6_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hola");
+            Form3 form3 = new Form3();
+            form3.Show();
         }
     }
 }

@@ -28,8 +28,8 @@ namespace demoInteractiva
                 
                 MessageBox.Show ("WELCOME");
                 //OBRIR NOU FORMULARI PASSANT DADES
-                string value = textBox1.Text;
-                Form4 form4 = new Form4(value);
+                //string value = textBox1.Text;
+                Form4 form4 = new Form4(textBox1.Text);
                 form4.Show();
                 //opcional: per tancar form1:
                 this.Hide(); //closes the first form
@@ -55,7 +55,7 @@ namespace demoInteractiva
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            checkBox1.Checked = true;
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -98,22 +98,7 @@ namespace demoInteractiva
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            if (textBox1.Text == "JAUME" & textBox2.Text == "PASSWORD")
-            {
-
-                MessageBox.Show("WELCOME");
-                //OBRIR NOU FORMULARI PASSANT DADES
-                string value = textBox1.Text;
-                Form4 form4 = new Form4(value);
-                form4.Show();
-                //opcional: per tancar form1:
-                this.Hide(); //closes the first form
-
-            }
-            else
-            {
-                MessageBox.Show("WRONG DATA");
-            }
+            
         }
 
         private void textBox2_KeyDown(object sender, KeyEventArgs e)
