@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -89,6 +90,11 @@ namespace demoInteractiva
         {
             Form3 form3 = new Form3();
             form3.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", "https://www.vidalibarraquer.net");
         }
     }
 }
